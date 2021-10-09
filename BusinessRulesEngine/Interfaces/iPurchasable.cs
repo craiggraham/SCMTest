@@ -16,6 +16,6 @@ namespace BusinessRulesEngine.Interfaces
     interface iPurchasable
     {
         PurchasableTypeEnum ItemType { get; set; }
-        PurchasableTypeEnum ItemName { get; set; }
+        String ItemName { get; set; }
     }
 }

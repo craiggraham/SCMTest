@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * into smaller components because there isn't a need to in this spec.
  */
 
-namespace BusinessRulesEngine
+namespace BusinessRulesEngine.Interfaces
 {
     interface iPerson
     {
