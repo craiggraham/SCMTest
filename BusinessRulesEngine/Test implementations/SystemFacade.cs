@@ -18,7 +18,7 @@ namespace BusinessRulesEngine.Test_implementations
     {
         public iCommissionManager GetCommissionManager()
         {
-            throw new NotImplementedException();
+            return new CommissionManager();
         }
 
         public iEmailManager GetEmailManager()
@@ -44,7 +44,7 @@ namespace BusinessRulesEngine.Test_implementations
 
         public iPackingSlipManager GetPackingSlipManager()
         {
-            throw new NotImplementedException();
+            return new PackingSlipManager();
         }
 
         public iPerson getPerson(string email, string name, string address)
