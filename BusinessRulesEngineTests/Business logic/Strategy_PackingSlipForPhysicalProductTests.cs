@@ -27,7 +27,7 @@ namespace BusinessRulesEngine.Business_logic.Tests
 
             PackingSlipManager psm = new PackingSlipManager(); //needs to be local for the list
 
-            s.ApplyStrategy(TE.item_physicalnonbook, o, TE.membershipManager, TE.commissionManager, psm);
+            s.ApplyStrategy(TE.item_physicalnonbook, o, TE.membershipManager, TE.commissionManager, psm, TE.emailManager);
 
             //Packing slip manager should've done one item
             Assert.AreEqual(1, psm.items.Count, "Number of packing slips produced is wrong");

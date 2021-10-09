@@ -15,12 +15,13 @@ namespace BusinessRulesEngine.Business_logic
     public class Strategy_PackingSlipForPhysicalProduct : iPurchasableStrategy
     {
         public void ApplyStrategy(iPurchasable item, iOrder order, iMembershipManager membershipManager, 
-            iCommissionManager commissionManager, iPackingSlipManager packingSlipManager)
+            iCommissionManager commissionManager, iPackingSlipManager packingSlipManager, iEmailManager emailManager)
         {
             switch (item.ItemType)
             {
                 case PurchasableTypeEnum.PhysicalNonBook:
                 case PurchasableTypeEnum.Book:
+                case PurchasableTypeEnum.Video:
                     //Generate a packing slip for the customer
                     packingSlipManager.GeneratePackingSlip(item, order.Customer, 0);
                     break;

@@ -14,6 +14,8 @@ namespace BusinessRulesEngine.Interfaces
          * we iterate through the items list in the engine itself- iterators often don't like the 
          * underlying collection changing while iterating.
          */
-        void ApplyStrategy(iPurchasable item, iOrder order, iMembershipManager membershipManager, iCommissionManager commissionManager, iPackingSlipManager packingSlipManager);
+        void ApplyStrategy(iPurchasable item, iOrder order, 
+            iMembershipManager membershipManager, iCommissionManager commissionManager, 
+            iPackingSlipManager packingSlipManager, iEmailManager emailManager);
     }
 }
