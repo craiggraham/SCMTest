@@ -19,6 +19,7 @@ namespace BusinessRulesEngine.Interfaces
         Book,
         PhysicalNonBook,
         Membership,
-        MembershipUpgrade
+        MembershipUpgrade,
+        Video
     }
 }
