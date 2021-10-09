@@ -31,7 +31,3 @@ namespace BusinessRulesEngine.Business_logic
         }
     }
 }
-
-{
-}
-}
