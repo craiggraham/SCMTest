@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRulesEngine.Interfaces
 {
-    interface iPerson
+     public interface iPerson
     {
         string EmailAddress { get; set; }
         string Name { get; set; }

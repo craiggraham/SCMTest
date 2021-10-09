@@ -13,7 +13,7 @@ namespace BusinessRulesEngine.Interfaces
      *
      */
 
-    interface iPurchasable
+    public interface iPurchasable
     {
         PurchasableTypeEnum ItemType { get; set; }
         String ItemName { get; set; }

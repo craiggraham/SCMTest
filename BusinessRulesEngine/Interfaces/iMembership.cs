@@ -15,7 +15,7 @@ namespace BusinessRulesEngine.Interfaces
      * In a real system there'd be at least an expiry date in here as well.
      */
 
-    interface iMembership
+    public interface iMembership
     {
         iPerson Owner { get; }
         bool UpgradedMembership { get; set; }

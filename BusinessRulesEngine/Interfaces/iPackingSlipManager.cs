@@ -13,7 +13,7 @@ namespace BusinessRulesEngine.Interfaces
      * called for here.
      */
 
-    interface iPackingSlipManager
+    public interface iPackingSlipManager
     {
         /* Generate a packing slip for either the customer or for the 
          * royalty department.

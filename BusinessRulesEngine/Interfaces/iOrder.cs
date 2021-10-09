@@ -13,7 +13,7 @@ namespace BusinessRulesEngine.Interfaces
      * simplify item management by using a List with its
      * own functions to add to and manipulate the contents.
      */
-    interface iOrder
+    public interface iOrder
     {
         iPerson Customer { get; }
 

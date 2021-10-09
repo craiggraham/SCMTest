@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRulesEngine.Interfaces
 {
-    enum PurchasableTypeEnum
+    public enum PurchasableTypeEnum
     {
         Book,
         PhysicalNonBook,

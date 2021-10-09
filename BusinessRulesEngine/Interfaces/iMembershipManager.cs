@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  */
 namespace BusinessRulesEngine.Interfaces
 {
-    interface iMembershipManager
+    public interface iMembershipManager
     {
         // Add a new membership for the specified person.
         // Returns 0 on success, 1 if a membershp already exists.

@@ -9,7 +9,7 @@ namespace BusinessRulesEngine.Interfaces
     /* Interface to something that handles the payment of commission to agents. 
      */
 
-    interface iCommissionManager
+    public interface iCommissionManager
     {
         /* Trigger the payment of commission on this item. 
          * Exactly how this works isn't specified. I assume it's a model where a person

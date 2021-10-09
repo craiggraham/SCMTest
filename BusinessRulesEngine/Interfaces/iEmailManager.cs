@@ -14,7 +14,7 @@ namespace BusinessRulesEngine.Interfaces
      * there's not a huge amount we can do with the information anyway.
      */
 
-    interface iEmailManager
+    public interface iEmailManager
     {
         void SendEmail(iPerson person, String message);
     }

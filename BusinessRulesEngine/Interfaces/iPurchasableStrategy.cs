@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BusinessRulesEngine.Interfaces
 {
     /* An interface to a business rule that can be applied to an item */
-    interface iPurchasableStrategy
+    public interface iPurchasableStrategy
     {
         /* Applies business logic to a single item of the order.
          * Because business logic can add extra items to the order, we have to be careful of how
