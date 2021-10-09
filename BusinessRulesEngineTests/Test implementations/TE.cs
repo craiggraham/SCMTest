@@ -1,4 +1,5 @@
-﻿using BusinessRulesEngine.Test_implementations;
+﻿using BusinessRulesEngine.Interfaces;
+using BusinessRulesEngine.Test_implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace BusinessRulesEngineTests.Test_implementations
 
     public static class TE
     {
-        public static MembershipManager membershipManager;
-        public static Person person;
-        public static Person person2;
+        public static iMembershipManager membershipManager;
+        public static iPerson person;
+        public static iPerson person2;
 
         /* Initialise the test environment.
          * We don't just create implicitly because we want each test to start
@@ -23,9 +24,10 @@ namespace BusinessRulesEngineTests.Test_implementations
          */
         public static void Init()
         {
-            membershipManager = new MembershipManager();
-            person = new Person("a@b.c", "A Person", "An Address");
-            person2 = new Person("a2@b.c", "Another Person", "Another Address");
+            iSystemFacade f = new SystemFacade();
+            membershipManager = f.GetMembershipManager();
+            person = f.getPerson("a@b.c", "A Person", "An Address");
+            person2 = f.getPerson("a2@b.c", "Another Person", "Another Address");
 
         }
 

@@ -10,7 +10,6 @@ namespace BusinessRulesEngine.Test_implementations
     /* Simple class to implement iOrder for testing. */
     class Order : iOrder
     {
-        iPerson customer;
         List<iPurchasable> items;
 
         public Order(iPerson customer)
@@ -18,7 +17,7 @@ namespace BusinessRulesEngine.Test_implementations
             items = new List<iPurchasable>();
         }
 
-        public iPerson Customer {get {return customer;} }
+        public iPerson Customer { get; }
 
 
         public List<iPurchasable> Items { get { return items; } }
