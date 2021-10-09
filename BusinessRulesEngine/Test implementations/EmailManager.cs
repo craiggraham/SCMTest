@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace BusinessRulesEngine.Test_implementations
 {
+
+    /* Class to simulate an implementation of iEmailManager, 
+     * logs sent messages and exposes them in a way we can get at 
+     * for testing.
+     */
+
     public class EmailManager : iEmailManager
     {
 

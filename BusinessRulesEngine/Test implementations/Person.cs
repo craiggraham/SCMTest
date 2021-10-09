@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace BusinessRulesEngine.Test_implementations
 {
     /* Simple class to implement iPerson for testing. */
-    class Person : iPerson
+    public class Person : iPerson
     {
         public string EmailAddress { get; set; }
         public string Name { get; set; }
