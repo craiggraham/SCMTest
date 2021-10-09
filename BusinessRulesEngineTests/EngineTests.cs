@@ -109,9 +109,9 @@ namespace BusinessRulesEngine.Tests
             //Should be upgraded
             Assert.IsTrue(e.membershipManager.GetMembershipForPerson(o.Customer).UpgradedMembership, "Membership not upgraded");
 
-            //Should have also emailed the user
+            //Should have also emailed the user- twice because we first joined then upgraded.
 
-            Assert.AreEqual(1, e.test_emailManagerList.Count, "Email not generated");
+            Assert.AreEqual(2, e.test_emailManagerList.Count, "Email not generated");
 
         }
 

@@ -11,7 +11,7 @@ namespace BusinessRulesEngine.Business_logic
     * "If the payment is for a membership or upgrade, e-mail the owner and inform them of the activation/upgrade."
     * 
     */
-    public class Strategy_EmailAboutMembershipiPurchasableStrategy
+    public class Strategy_EmailAboutMembership : iPurchasableStrategy
     {
         public void ApplyStrategy(iPurchasable item, iOrder order, iMembershipManager membershipManager,
             iCommissionManager commissionManager, iPackingSlipManager packingSlipManager, iEmailManager emailManager)

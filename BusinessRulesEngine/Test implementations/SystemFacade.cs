@@ -65,6 +65,7 @@ namespace BusinessRulesEngine.Test_implementations
             l.Add(new Strategy_ExtraPackingSlipForBooks());
             l.Add(new Strategy_ActivateMembership());
             l.Add(new Strategy_UpgradeMembership());
+            l.Add(new Strategy_EmailAboutMembership());
             l.Add(new Strategy_AddFirstAidVideo());
             l.Add(new Strategy_GenerateCommissionPayment());
             return l;
