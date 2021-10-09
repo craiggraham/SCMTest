@@ -15,6 +15,7 @@ namespace BusinessRulesEngine.Test_implementations
         public Order(iPerson customer)
         {
             items = new List<iPurchasable>();
+            this.Customer = customer;
         }
 
         public iPerson Customer { get; }
