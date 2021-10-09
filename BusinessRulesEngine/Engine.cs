@@ -21,6 +21,39 @@ namespace BusinessRulesEngine
         iMembershipManager membershipManager;
         iPackingSlipManager packingSlipManager;
 
+
+        /* For testing
+         * For classes where they don't have internal state that it makes sense to have in the interface, 
+         * we need to cast our test classes to the concrete types to get at the test data.
+         */
+        public List<iPurchasable>  test_CommissionManagerList
+        {
+            get
+            {
+                CommissionManager cm = (CommissionManager)commissionManager;
+                return cm.items;
+            }
+        }
+
+        public List<iPurchasable> test_PackingSlipManagerList
+        {
+            get
+            {
+                PackingSlipManager psm = (PackingSlipManager)packingSlipManager;
+                return psm.items;
+            }
+        }
+
+        public List<String> test_emailManagerList
+        {
+            get
+            {
+                EmailManager em = (EmailManager)emailManager;
+                return em.Messages;
+            }
+        }
+
+
         /* Iterates through all the items in an order, for each item 
          * execute all the business rules- including any items added
          * as a result of the business rules.
@@ -40,7 +73,7 @@ namespace BusinessRulesEngine
             {
                 ProcessItem(order, index, rules);
 
-            } while (index++ < order.Items.Count);
+            } while (++index < order.Items.Count);
 
         }
 
