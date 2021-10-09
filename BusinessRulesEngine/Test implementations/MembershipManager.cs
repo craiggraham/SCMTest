@@ -35,6 +35,8 @@ namespace BusinessRulesEngine.Test_implementations
         */
         public iMembership GetMembershipForPerson(iPerson customer)
         {
+            if (customer==null) return null;
+            if (memberships.Count == 0) return null;
             return memberships.Find(x => x.Owner.Name == customer.Name);
         }
 

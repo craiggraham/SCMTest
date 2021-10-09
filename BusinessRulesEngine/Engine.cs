@@ -18,7 +18,7 @@ namespace BusinessRulesEngine
         /* Working environment */
         iCommissionManager commissionManager;
         iEmailManager emailManager;
-        iMembershipManager membershipManager;
+        public iMembershipManager membershipManager;
         iPackingSlipManager packingSlipManager;
 
 
